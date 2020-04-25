@@ -1,0 +1,1 @@
+docker build --tag equill/neo4j-graphql:0.0.1 .

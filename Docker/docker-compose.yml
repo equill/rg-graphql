@@ -1,0 +1,17 @@
+version: "3"
+services:
+    neo4j:
+        image: neo4j-graphql:0.0.1
+        deploy:
+            replicas: 1
+        ports:
+            - "7677:7474"
+            - "7690:7687"
+        volumes:
+            - /home/james/data/rg-graphql/data:/data
+        networks:
+            - sebcatnet
+        environment:
+            NEO4J_AUTH: "neo4j/wallaby"
+networks:
+    sebcatjsnet:

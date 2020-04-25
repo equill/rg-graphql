@@ -1,0 +1,1 @@
+docker run --publish 7473:7473 --publish 7474:7474 --publish 7687:7687 --detach --env="NEO4J_AUTH=neo4j/wallaby" equill/neo4j-graphql:0.0.1
